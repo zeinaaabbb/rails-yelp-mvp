@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :restaurants
-
+    collection do
+      get :reviews
+    end
 end
